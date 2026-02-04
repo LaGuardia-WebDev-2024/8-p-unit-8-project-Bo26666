@@ -6,7 +6,7 @@ setup = function() {
     drawFish(200, 200, color(200,0,200)); 
     drawFish(200, 250, color(0,200,200));
 
-drawshark(350,225,)
+
 
 };
 
@@ -17,7 +17,8 @@ draw = function(){
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
-drawShark(200,200)
+drawshark(mouseX,mouseY)
+drawocto(octoX,octoY)
 }
 
 //🟡drawFish Function - will run when called
@@ -30,11 +31,16 @@ var drawFish = function(fishX, fishY, fishColor){
 //🟡drawshark Function - will run when called
 var drawshark = function(sharkX, sharkY){
   textSize(80);
-  var sharkX= random(10,60)
-  var sharkY= random(10,70)
-  text("🦈", sharkX, sharkY);
+ text("🦈", sharkX, sharkY);
 };
 
+//🟡drawocto Function - will run when called
+var drawocto = function(octoX, octoY){
+  textSize(80);
+  var octoX = random(0,400)
+  var octoY = random (0,400)
+ text("🐙", octoX, octoY);
+};
 
 
 
