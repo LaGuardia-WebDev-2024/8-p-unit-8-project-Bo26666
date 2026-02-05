@@ -18,7 +18,8 @@ draw = function(){
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 drawshark(mouseX,mouseY)
-drawocto(octoX,octoY)
+drawocto(random(0,400), random(0,400))
+drawdolph(random(0,400), random(0,400))
 }
 
 //🟡drawFish Function - will run when called
@@ -43,4 +44,10 @@ var drawocto = function(octoX, octoY){
 };
 
 
-
+//🟡drawdolph Function - will run when called
+var drawdolph = function(dolphX, dolphY){
+  textSize(80);
+  var dolphX = random(0,400)
+  var dolphY = random (0,400)
+ text("🐬", dolphX, dolphY);
+};
